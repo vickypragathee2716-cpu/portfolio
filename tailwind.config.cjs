@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         neon: {
           blue: '#00E5FF',
+          // b
           purple: '#7C4DFF'
         }
       }

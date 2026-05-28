@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --glass: rgba(255,255,255,0.04);
+}
+
+.dark .glass{ backdrop-filter: blur(8px); background: rgba(10,10,30,0.4); border: 1px solid rgba(255,255,255,0.06); }
+.light .glass{ backdrop-filter: blur(6px); background: rgba(255,255,255,0.6); border: 1px solid rgba(0,0,0,0.06); color: #0b1220 }
+
+/* animated node background */
+.canvas-bg{ position: fixed; inset:0; z-index:0; }
+.content{ position: relative; z-index:10 }
+
+/* subtle floating animation */
+@keyframes floaty{ 0%{ transform: translateY(0) } 50%{ transform: translateY(-6px)} 100%{ transform: translateY(0)} }
+.card-float{ animation: floaty 6s ease-in-out infinite }
